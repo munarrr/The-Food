@@ -6,42 +6,29 @@ import PageTitle from './../Layout/PageTitle';
 import SectionCounter from './../Element/SectionCounter';
 import TestimonialCarousel from './../Element/TestimonialCarousel';
 import FormStyle from './../Element/FormStyle';
-import Team from './Team'
+import Team from '../Element/Team/Team'
 
 //Images
 import  bnr1 from './../../images/banner/bnr5.jpg';
-import  php from './../../images/expertise/php.png';
-import  joomla from './../../images/expertise/joomla.png';
-import  drupal from './../../images/expertise/drupal.png';
-import  laravel from './../../images/expertise/laravel.png';
-import  magento from './../../images/expertise/magento.png';
-import  wordpress from './../../images/expertise/wordpress.png';
-import  oscommerce from './../../images/expertise/oscommerce.png';
-import  ecommerce from './../../images/expertise/ecommerce.png';
-import  zend from './../../images/expertise/zend-framework.png';
-import  ruby from './../../images/expertise/ruby-rails.png';
-import  zencart from './../../images/expertise/zencart.png';
-import  xcart from './../../images/expertise/xcart.png';
-import  python from './../../images/expertise/python-framework.png';
+import  kyr from './../../images/expertise/kyr.png';
+import  kaz from './../../images/expertise/kaz.png';
+import  eng from './../../images/expertise/eng.png';
+import  rus from './../../images/expertise/rus.png';
+import  kor from './../../images/expertise/kor.png';
+import  turk from './../../images/expertise/turk.png';
+
 import bg1 from './../../images/background/bg1.jpg';
 import bgmap from './../../images/background/bg-map.jpg';
 
 const imageBlog = [
-	{image: php, title: 'Php', },
-	{image: joomla, title: 'Joomla', },
-	{image: drupal, title: 'Drupal', },
-	{image: laravel, title: 'Laravel', },
-	{image: magento, title: 'Magento 1.x', },
-	{image: magento, title: 'Magento 2.x', },
-	{image: wordpress, title: 'Wordpress', },
-	{image: oscommerce, title: 'Oscommerce', },
-	{image: ecommerce, title: 'ecommerce', },
-	{image: zend, title: 'Zend Framework', },
-	{image: ruby, title: 'Ruby Rails', },
-	{image: zencart, title: 'Zencart', },
-	{image: xcart, title: 'Xcart', },
-	{image: python, title: 'Python Framework', },
-];
+	{image: kyr, title: 'Кыргыз тили',text:"mcsdmcksdmcksmdkcmsdk" },
+	{image: kaz, title: 'Казакский язык',text:"mcsdmcksdmcksmdkcmsdk" },
+	{image: eng, title: 'English',text:"mcsdmcksdmcksmdkcmsdk" },
+	{image: rus, title: 'Русский',text:"mcsdmcksdmcksmdkcmsdk" },
+	{image: kor, title: 'Корейский язык',text:"mcsdmcksdmcksmdkcmsdk" },
+    { image: turk, title: 'Turkish',text:"mcsdmcksdmcksmdkcmsdk" }
+]
+	
 
 class Expertise extends Component {
     render() {
@@ -72,7 +59,7 @@ class Expertise extends Component {
 														<div className="icon-lg m-b20"> <Link to={"#"} className="icon-cell"><img src={data.image} alt=""/></Link> </div>
 														<div className="icon-content">
 															<h5 className="dlab-tilte text-uppercase"><Link to={"#"}>{data.title}</Link></h5>
-															<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod..</p>
+                                                            <p>{ data.text}</p>
 														</div>
 													</div>
 												</div>
@@ -151,6 +138,88 @@ class Expertise extends Component {
                             </div>
                         </div>
                         {/* <!-- Our Services --> */}
+                        <div className="section-full content-inner-1">
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-lg-12">
+                                        <div className="section-head text-center">
+                                            <h2 className="box-title m-tb0">Our Pricing<span className="bg-primary"></span></h2>
+                                            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the </p>
+                                        </div>
+                                        {/* <!-- Pricing table-1 Columns 3 with gap --> */}
+                                        <div className="section-content box-sort-in button-example">
+                                            <div className="pricingtable-row">
+                                                <div className="row max-w1000 m-auto">
+                                                    <div className="col-sm-12 col-md-4 col-lg-4 p-lr0">
+                                                        <div className="pricingtable-wrapper style1">
+                                                            <div className="pricingtable-inner">
+                                                                <div className="pricingtable-price">
+                                                                    <div className="pricingtable-icon"><i className="flaticon-rocket-ship"></i></div>
+                                                                    <h4 className="font-weight-300 m-t10 m-b0">Starter</h4>
+                                                                    <span className="pricingtable-bx text-primary">$25</span> <span className="pricingtable-type">Par Month</span>
+                                                                </div>
+                                                                <ul className="pricingtable-features">
+                                                                    <li><i className="fa fa-check text-primary"></i> Full Responsive </li>
+                                                                    <li><i className="fa fa-check text-primary"></i> Multi color theme</li>
+                                                                    <li><i className="fa fa-check text-primary"></i> With Bootstrap</li>
+                                                                    <li><i className="fa fa-check text-primary"></i> Easy to customize</li>
+                                                                    <li><i className="fa fa-check text-primary"></i> Many Sortcodes</li>
+                                                                </ul>
+                                                                <div className="m-t20">
+                                                                    <Link to={"#"} className="site-button outline outline-2 button-md">Sign Up</Link>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-sm-12 col-md-4 col-lg-4 p-lr0">
+                                                        <div className="pricingtable-wrapper style1 active">
+                                                            <div className="pricingtable-inner">
+                                                                <div className="pricingtable-price">
+                                                                    <div className="pricingtable-icon"><i className="flaticon-users"></i></div>
+                                                                    <h4 className="font-weight-300 m-t10 m-b0">Professional</h4>
+                                                                    <span className="pricingtable-bx text-primary">$50</span> <span className="pricingtable-type">Par Month</span>
+                                                                </div>
+                                                                <ul className="pricingtable-features">
+                                                                    <li><i className="fa fa-check text-primary"></i> Full Responsive </li>
+                                                                    <li><i className="fa fa-check text-primary"></i> Multi color theme</li>
+                                                                    <li><i className="fa fa-check text-primary"></i> With Bootstrap</li>
+                                                                    <li><i className="fa fa-check text-primary"></i> Easy to customize</li>
+                                                                    <li><i className="fa fa-check text-primary"></i> Many Sortcodes</li>
+                                                                </ul>
+                                                                <div className="m-t20 m-b5">
+                                                                    <Link to={"#"} className="site-button button-md">Sign Up</Link>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-sm-12 col-md-4 col-lg-4 p-lr0">
+                                                        <div className="pricingtable-wrapper style1">
+                                                            <div className="pricingtable-inner">
+                                                                <div className="pricingtable-price">
+                                                                    <div className="pricingtable-icon"><i className="flaticon-bar-chart"></i></div>
+                                                                    <h4 className="font-weight-300 m-t10 m-b0">Enterprise</h4>
+                                                                    <span className="pricingtable-bx text-primary">$75</span> <span className="pricingtable-type">Par Month</span>
+                                                                </div>
+                                                                <ul className="pricingtable-features">
+                                                                    <li><i className="fa fa-check text-primary"></i> Full Responsive </li>
+                                                                    <li><i className="fa fa-check text-primary"></i> Multi color theme</li>
+                                                                    <li><i className="fa fa-check text-primary"></i> With Bootstrap</li>
+                                                                    <li><i className="fa fa-check text-primary"></i> Easy to customize</li>
+                                                                    <li><i className="fa fa-check text-primary"></i> Many Sortcodes</li>
+                                                                </ul>
+                                                                <div className="m-t20">
+                                                                    <Link to={"#"} className="site-button outline outline-2 button-md">Sign Up</Link>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         {/* <!-- Why Chose Us --> */}
 							<SectionCounter />
                         {/* <!-- Why Chose Us End --> */}

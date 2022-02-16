@@ -15,10 +15,10 @@ import pic4 from './../../images/about/pic4.jpg';
 import bgimg from './../../images/background/bg1.jpg';
 import bgimg2 from './../../images/background/bg-map.jpg';
 import bgimg3 from './../../images/background/bg1.jpg';
+import Faqs from '../Element/Faq/Faq';
 
 
-class Homepage extends Component{
-		
+class Homepage extends Component{	
 	componentDidMount() {
 		
 	}	
@@ -127,7 +127,11 @@ class Homepage extends Component{
                             </div>
                         </div>
                         {/* <!-- Testimonials END --> */}
-						
+                        <div className="section-full">
+                            <div className="container">                                               
+                                   <Faqs />                         
+                            </div>
+                        </div>
 						{/* <!-- Get in touch --> */}
                         <div className="section-full overlay-primary-dark bg-img-fix" style={{ backgroundImage: "url(" + bgimg3 + ")" }}>
                             <FormStyle />
