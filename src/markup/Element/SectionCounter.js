@@ -5,9 +5,9 @@ import Counter from './Counter';
 import bg1 from './../../images/background/bg1.jpg';
 
 const iconBlog =[
-	{icon: <i className="flaticon-pen" />,	   title: 'Creative',},
-	{icon: <i className="flaticon-diamond" />, title: 'Innovative',},
-	{icon: <i className="flaticon-devices" />, title: 'Functional',},
+	{ icon: <i className="flaticon-pen" />, title: 'Creative', text:"Ускоренная и эффективная методика"},
+	{ icon: <i className="flaticon-diamond" />, title: 'Innovative', text: "Выдача сертификата по окончанию курсов"},
+	{ icon: <i className="flaticon-devices" />, title: 'Functional', text: "Удобное расписание"},
 ];
 
 class SectionCounter extends Component{
@@ -17,8 +17,8 @@ class SectionCounter extends Component{
 				<div className="section-full content-inner-1 overlay-primary about-service bg-img-fix" style={{ backgroundImage: "url(" + bg1 + ")" }}>
 					<div className="container">
 						<div className="section-head text-white text-center">
-							<h2 className="box-title m-tb0 max-w800 m-auto">Amazing things happen to your business when we connect those dots of utility and value<span className="bg-primary"></span></h2>
-							<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over</p>
+							<h2 className="box-title m-tb0 max-w800 m-auto">ВАС БУДУТ ОБУЧАТЬ ОПЫТНЫЕ И ЭНЕРГИЧНЫЕ ПРЕПОДАВАТЕЛИ<span className="bg-primary"></span></h2>
+							<p>Всего за 3 месяца вы сможете свободно владеть любым из этих языков</p>
 						</div>
 					</div>
 					<div className="container">
@@ -29,7 +29,7 @@ class SectionCounter extends Component{
 										<div className="icon-lg text-white m-b20"> <Link to={"#"} className="icon-cell text-white">{item.icon}</Link> </div>
 										<div className="icon-content">
 											<h5 className="dlab-tilte text-uppercase">{item.title}</h5>
-											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod..</p>
+											<p>{item.text}</p>
 										</div>
 									</div>
 								</div>

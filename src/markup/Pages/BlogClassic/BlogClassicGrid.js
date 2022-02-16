@@ -13,8 +13,12 @@ import grid3 from './../../../images/blog/grid/pic3.jpg';
 import grid4 from './../../../images/blog/grid/pic4.jpg';
 
 const postBlog = [
-	{images: grid1, }, {images: grid2, }, {images: grid3, },
-	{images: grid4, }, {images: grid1, }, {images: grid2, },
+	{ images: grid1, text: "Вечер Halloween в The London School of Languages and Cultures.", link: "/", title:"HALOWEEN В LSLC"},
+	{ images: grid2, text: "Теперь вместо 5 уровней - в нашей школе будет 4 уровня для...", link: "/", title:"У НАС СОКРАЩЕНИЕ" },
+	{ images: grid3,text:"All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true.",link:"/",title:"Title of first blog post" },
+	{ images: grid4,text:"All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true.",link:"/",title:"Title of first blog post" },
+	{ images: grid1,text:"All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true.",link:"/",title:"Title of first blog post" },
+	{ images: grid2,text:"All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true.",link:"/",title:"Title of first blog post" },
 ];
 
 // Masonry section
@@ -32,7 +36,7 @@ class BlogClassicGrid extends Component {
                 <Header />
                 <div className="page-content bg-white">
                     <div className="dlab-bnr-inr dlab-bnr-inr-sm overlay-primary bg-pt" style={{ backgroundImage: "url(" + bnr1 + ")" }}>	
-						<PageTitle motherMenu='Blog Classic Grid' activeMenu='Blog Classic Grid' />
+						<PageTitle motherMenu='Новости' activeMenu='Новости' />
                     </div>
                     <div className="content-area">
                         <div className="container">
@@ -50,7 +54,7 @@ class BlogClassicGrid extends Component {
 												<div className="dlab-post-media dlab-img-effect "><Link to={"#"}><img src={data.images} alt="" /></Link> </div>
 												<div className="dlab-info p-a20 border-1">
 													<div className="dlab-post-title ">
-														<h4 className="post-title"><Link to={"#"}>Title of first blog post</Link></h4>
+														<h4 className="post-title"><Link to={"#"}>{ data.title}</Link></h4>
 													</div>
 													<div className="dlab-post-meta">
 														<ul className="d-flex align-items-center">
@@ -60,10 +64,10 @@ class BlogClassicGrid extends Component {
 														</ul>
 													</div>
 													<div className="dlab-post-text">
-														<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true.</p>
+														<p> { data.text}</p>
 													</div>
 													<div className="dlab-post-readmore blog-share">
-														<Link to={"#"} title="READ MORE" rel="bookmark" className="site-button outline outline-1">READ MORE
+														<Link to={"#"} title="READ MORE" rel="bookmark" className="site-button outline outline-1">Подробнее
 															<i className="fa fa-long-arrow-right ml-1"></i>
 														</Link>
 														<div className="share-btn">

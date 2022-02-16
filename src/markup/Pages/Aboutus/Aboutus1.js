@@ -23,14 +23,14 @@ class Aboutus1 extends Component {
                 <Header />
                 <div className="page-content bg-white">
                     <div className="dlab-bnr-inr overlay-primary" style={{ backgroundImage: "url(https://avatars.mds.yandex.net/get-altay/1923723/2a0000016ff08c71029f72920c8a054e22a9/XXL)" }}>
-						<PageTitle motherMenu='About Us 1' activeMenu='About Us 1' />
+						<PageTitle motherMenu='О нас' activeMenu='О нас' />
 					</div>	
                     <div className="content-block">
                         <div className="section-full content-inner-2">
                             <div className="container">
                                 <div className="section-head text-black text-center">
                                     <h4 className="text-gray-dark m-b10">О нас</h4>
-                                    <h2 className="box-title m-tb0">We create brand new corporate identities<span className="bg-primary"></span></h2>
+                                    <h2 className="box-title m-tb0">Мы создем будущее<span className="bg-primary"></span></h2>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@ function VisionBlog(){
 			<div className="section-ful our-about-info content-inner-1 " style={{ backgroundImage: "url(" + bg2 + ")",backgroundPosition:"center" ,backgroundRepeat:"no-repeat" }}>
 				<div className="container">
 					<div className="section-head text-center">
-						<h2 className="box-title m-tb0">Mission And Vision<span className="bg-primary"></span></h2>
+						<h2 className="box-title m-tb0">Наша миссия и видение<span className="bg-primary"></span></h2>
 						<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the </p>
 					</div>
 					<div className=" row dzseth  m-b30">
@@ -100,7 +100,7 @@ function VisionBlog(){
 						</div>
 						<div className="col-lg-6 col-md-12 m-b30 dis-tbl text-justify">
 							<div className="dis-tbl-cell">
-								<h3 className="box-title">Mision<span className="bg-primary"></span></h3>
+								<h3 className="box-title">Миссия<span className="bg-primary"></span></h3>
 								<p className="font-16">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
 								<p className="font-16">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
 								<p className="font-16">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
@@ -110,7 +110,7 @@ function VisionBlog(){
 					<div className="row dzseth column-reverse">
 						<div className="col-lg-6 col-md-12 dis-tbl text-justify">
 							<div className="dis-tbl-cell">
-								<h3 className="box-title">Vision<span className="bg-primary"></span></h3>
+                                <h3 className="box-title">Видение<span className="bg-primary"></span></h3>
 								<p className="font-16">
 									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 	make a type specimen book. 
 								</p>

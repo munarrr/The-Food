@@ -23,18 +23,18 @@ import box11 from './../../../images/portfolio/image_11.jpg';
 import box12 from './../../../images/portfolio/image_12.jpg';
 
 const imageBlog = [
-	{  Large: box1 , tag: ['Web','Advertising',] , },
-	{  Large: box2 , tag: ['Branding', 'Design', ] , }, 
-	{  Large: box3 , tag: ['Advertising', 'Web', ] , }, 
-	{  Large: box4 , tag: ['Design', ], },
-	{  Large: box5 , tag: ['Branding', ], }, 
-	{  Large: box6 , tag: ['Photography' ],  }, 
-	{  Large: box7 , tag: ['Web', 'Photography'	] , }, 
-	{  Large: box8 , tag: ['Design','Advertising',] , }, 
-	{  Large: box9 , tag: ['Branding','Branding','Web'] , }, 
-	{  Large: box11 , tag: [ 'Advertising', 'Design'] , }, 
-	{  Large: box10 , tag: [ 'Advertising', 'Design','Photography',] , }, 
-	{  Large: box12 , tag: ['Web','Photography', 'Advertising', 'Design'] , }, 
+	{  Large: box1 , tag: ['Все','Экскурсия',] , },
+	{  Large: box2 , tag: ['На уроке', 'Сертификаты', ] , }, 
+	{  Large: box3 , tag: ['Экскурсия', 'Все', ] , }, 
+	{  Large: box4 , tag: ['Сертификаты', ], },
+	{  Large: box5 , tag: ['На уроке', ], }, 
+	{  Large: box6 , tag: ['Отдых' ],  }, 
+	{  Large: box7 , tag: ['Все', 'Отдых'	] , }, 
+	{  Large: box8 , tag: ['Сертификаты','Экскурсия',] , }, 
+	{  Large: box9 , tag: ['На уроке','На уроке','Все'] , }, 
+	{  Large: box11 , tag: [ 'Экскурсия', 'Сертификаты'] , }, 
+	{  Large: box10 , tag: [ 'Экскурсия', 'Сертификаты','Отдых',] , }, 
+	{  Large: box12 , tag: ['Все','Отдых', 'Экскурсия', 'Сертификаты'] , }, 
 	
 ]
 
@@ -72,10 +72,10 @@ class ProtfolioFullWidth extends Component{
 		return(
 			<Fragment>	
 			<Header />
-			<div className="page-content bg-white">
+				<div className="page-content bg-white  ">
 				{/*  banner  */}
 				<div className="dlab-bnr-inr dlab-bnr-inr-sm overlay-primary bg-pt" style={{ backgroundImage: "url(" + bnr1 + ")" }}>
-					<PageTitle motherMenu="Portfolio Full Width"  activeMenu="Portfolio Full Width"  />
+					<PageTitle motherMenu="Галерея"  activeMenu="Галерея"  />
 				</div>
 				{/*  Section-1 Start  */}
 				<PortfolioItem />
@@ -96,15 +96,15 @@ function PortfolioItem(){
 	
 	return(
 		<>
-			<div className="section-full content-inner-1 portfolio text-uppercase">		
+			<div className="section-full content-inner-1 portfolio text-uppercase  mb-4">		
 				<div className="site-filters clearfix center  m-b40">
 					<ul className="filters" data-toggle="buttons">
-						<TagLi name="All"  handlesettag={setTag} tagActive={ tag === 'All' ? true : false }	/>
-						<TagLi name="Web"  handlesettag={setTag} tagActive={ tag === 'Web' ? true : false }	/>
-						<TagLi name="Advertising" handlesettag={setTag} tagActive={ tag === 'Advertising' ? true : false }	 />
-						<TagLi name="Branding"  handlesettag={setTag} tagActive={ tag === 'Branding' ? true : false }	/>
-						<TagLi name="Design"  handlesettag={setTag} tagActive={ tag === 'Design' ? true : false }	/>
-						<TagLi name="Photography"  handlesettag={setTag} tagActive={ tag === 'Photography' ? true : false }	/>
+						<TagLi name="Все"  handlesettag={setTag} tagActive={ tag === 'Все' ? true : false }	/>
+						<TagLi name="На уроке"  handlesettag={setTag} tagActive={ tag === 'Все' ? true : false }	/>
+						<TagLi name="Экскурсия" handlesettag={setTag} tagActive={ tag === 'Экскурсия' ? true : false }	 />
+						<TagLi name="Сертификаты"  handlesettag={setTag} tagActive={ tag === 'На уроке' ? true : false }	/>
+						<TagLi name="Отдых"  handlesettag={setTag} tagActive={ tag === 'Сертификаты' ? true : false }	/>
+						
 					</ul>
 				</div>
 				<SimpleReactLightbox>

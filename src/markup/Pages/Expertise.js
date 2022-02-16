@@ -21,12 +21,12 @@ import bg1 from './../../images/background/bg1.jpg';
 import bgmap from './../../images/background/bg-map.jpg';
 
 const imageBlog = [
-	{image: kyr, title: 'Кыргыз тили',text:"mcsdmcksdmcksmdkcmsdk" },
-	{image: kaz, title: 'Казакский язык',text:"mcsdmcksdmcksmdkcmsdk" },
-	{image: eng, title: 'English',text:"mcsdmcksdmcksmdkcmsdk" },
-	{image: rus, title: 'Русский',text:"mcsdmcksdmcksmdkcmsdk" },
-	{image: kor, title: 'Корейский язык',text:"mcsdmcksdmcksmdkcmsdk" },
-    { image: turk, title: 'Turkish',text:"mcsdmcksdmcksmdkcmsdk" }
+    { image: kyr, title: 'Кыргыз тили', text:"1200с/месяц - посещение занятий 3 раза в неделю. Итого вы пройдете за месяц 12 уроков." },
+    { image: kaz, title: 'Казакский язык', text:"1200с/месяц - посещение занятий 3 раза в неделю. Итого вы пройдете за месяц 12 уроков." },
+    { image: eng, title: 'English', text:"1200с/месяц - посещение занятий 3 раза в неделю. Итого вы пройдете за месяц 12 уроков." },
+    { image: rus, title: 'Русский', text:"1200с/месяц - посещение занятий 3 раза в неделю. Итого вы пройдете за месяц 12 уроков."},
+    { image: kor, title: 'Корейский язык', text:"1200с/месяц - посещение занятий 3 раза в неделю. Итого вы пройдете за месяц 12 уроков." },
+    { image: turk, title: 'Turkish', text:"Турецкий и русский языки включают в себя по 2 уровня, делятся на первый и второй месяцы." }
 ]
 	
 
@@ -38,7 +38,7 @@ class Expertise extends Component {
                 <div className="page-content bg-white">
                     {/* <!-- inner page banner --> */}
                     <div className="dlab-bnr-inr overlay-primary" style={{ backgroundImage: "url(" + bnr1 + ")" }}>
-                        <PageTitle motherMenu='Expertise' activeMenu='Expertise' />
+                        <PageTitle motherMenu='Курсы и цены' activeMenu='Курсы' />
                     </div>
                     {/* <!-- inner page banner END --> */}
                     <div className="content-block">
@@ -48,9 +48,9 @@ class Expertise extends Component {
                                 <div className="row">
                                     <div className="col-lg-8 col-md-7">
                                         <div className="section-head text-black">
-                                            <h4 className="text-gray-dark font-weight-300 m-b10">Expertise</h4>
-                                            <h2 className="box-title m-tb0">Completely customizable high-quality robust websites<span className="bg-primary"></span></h2>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                            <h4 className="text-gray-dark font-weight-300 m-b10">КУРСЫ АНГЛИЙСКОГО ЯЗЫКА</h4>
+                                            <h2 className="box-title m-tb0">Цены и курсы<span className="bg-primary"></span></h2>
+                                            <p>АВТОРСКАЯ РАЗРАБОТКА НА ОСНОВЕ СОВРЕМЕННЫХ МЕТОДОВ ТОЛЬКО ЭФФЕКТИВНОЕ ОБУЧЕНИЕ!</p>
                                         </div>
                                         <div className="row serv">
 											{imageBlog.map((data,index)=>(
@@ -69,14 +69,14 @@ class Expertise extends Component {
                                     <div className="col-lg-4 col-md-5 sticky-top">
                                         <form className="inquiry-form inner dzForm" action="script/contact.php">
                                             <div className="dzFormMsg"></div>
-                                            <h3 className="box-title m-t0 m-b10">Let's Convert Your Idea into Reality <span className="bg-primary"></span></h3>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                                            <h3 className="box-title m-t0 m-b10">Первый шаг к цели - бесплатный урок<span className="bg-primary"></span></h3>
+                                            <p>Отправляйте нам свои данные и и вы получите бесплатный урок от нас</p>
                                             <div className="row">
                                                 <div className="col-lg-6">
                                                     <div className="form-group">
                                                         <div className="input-group">
                                                             <span className="input-group-addon"><i className="ti-user text-primary"></i></span>
-                                                            <input name="dzName" type="text" required className="form-control" placeholder="First Name" />
+                                                            <input name="dzName" type="text" required className="form-control" placeholder="Имя" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -84,52 +84,13 @@ class Expertise extends Component {
                                                     <div className="form-group">
                                                         <div className="input-group">
                                                             <span className="input-group-addon"><i className="ti-mobile text-primary"></i></span>
-                                                            <input name="dzOther[Phone]" type="text" required className="form-control" placeholder="Phone" />
+                                                            <input name="dzOther[Phone]" type="text" required className="form-control" placeholder="Телефон" />
                                                         </div>
                                                     </div>
                                                 </div>
+                                               
                                                 <div className="col-lg-12">
-                                                    <div className="form-group">
-                                                        <div className="input-group">
-                                                            <span className="input-group-addon"><i className="ti-email text-primary"></i></span>
-                                                            <input name="dzEmail" type="email" className="form-control" required placeholder="Your Email Id" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-6">
-                                                    <div className="form-group">
-                                                        <div className="input-group">
-                                                            <span className="input-group-addon"><i className="ti-check-box text-primary"></i></span>
-                                                            <input name="dzOther[Subject]" type="text" required className="form-control" placeholder="Upload File" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-6">
-                                                    <div className="form-group">
-                                                        <div className="input-group">
-                                                            <span className="input-group-addon"><i className="ti-file text-primary"></i></span>
-                                                            <input name="dzOther[Subject]" type="text" required className="form-control" placeholder="Upload File" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-12">
-                                                    <div className="form-group">
-                                                        <div className="input-group">
-                                                            <span className="input-group-addon"><i className="ti-agenda text-primary"></i></span>
-                                                            <textarea name="dzMessage" rows="4" className="form-control" required placeholder="Tell us about your project or idea"></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-12">
-                                                    <div className="form-group">
-                                                        <div className="input-group">
-                                                            <div className="g-recaptcha" data-sitekey="6LefsVUUAAAAADBPsLZzsNnETChealv6PYGzv3ZN" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-                                                            <input className="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-12">
-                                                    <button name="submit" type="submit" value="Submit" className="site-button button-lg"> <span>Get A Free Quote!</span> </button>
+                                                    <button name="submit" type="submit" value="Submit" className="site-button button-lg"> <span>Отправить</span> </button>
                                                 </div>
                                             </div>
                                         </form>
@@ -143,8 +104,8 @@ class Expertise extends Component {
                                 <div className="row">
                                     <div className="col-lg-12">
                                         <div className="section-head text-center">
-                                            <h2 className="box-title m-tb0">Our Pricing<span className="bg-primary"></span></h2>
-                                            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the </p>
+                                            <h2 className="box-title m-tb0">Цены за курс<span className="bg-primary"></span></h2>
+                                            <p>ДЛЯ ТЕХ, КТО ХОЧЕТ ИЗБАВИТЬСЯ ОТ ЯЗЫКОВОГО БАРЬЕРА</p>
                                         </div>
                                         {/* <!-- Pricing table-1 Columns 3 with gap --> */}
                                         <div className="section-content box-sort-in button-example">
@@ -155,18 +116,16 @@ class Expertise extends Component {
                                                             <div className="pricingtable-inner">
                                                                 <div className="pricingtable-price">
                                                                     <div className="pricingtable-icon"><i className="flaticon-rocket-ship"></i></div>
-                                                                    <h4 className="font-weight-300 m-t10 m-b0">Starter</h4>
-                                                                    <span className="pricingtable-bx text-primary">$25</span> <span className="pricingtable-type">Par Month</span>
+                                                                    <h4 className="font-weight-300 m-t10 m-b0">Обучение в группах</h4>
+                                                                    <span className="pricingtable-bx text-primary">1200с</span> <span className="pricingtable-type">В месяц</span>
                                                                 </div>
                                                                 <ul className="pricingtable-features">
-                                                                    <li><i className="fa fa-check text-primary"></i> Full Responsive </li>
-                                                                    <li><i className="fa fa-check text-primary"></i> Multi color theme</li>
-                                                                    <li><i className="fa fa-check text-primary"></i> With Bootstrap</li>
-                                                                    <li><i className="fa fa-check text-primary"></i> Easy to customize</li>
-                                                                    <li><i className="fa fa-check text-primary"></i> Many Sortcodes</li>
+                                                                    <li><i className="fa fa-check text-primary"></i>Вы получите безценный опыт</li>
+                                                                    <li><i className="fa fa-check text-primary"></i> Вы получите безценный опыт</li>
+                                                                    <li><i className="fa fa-check text-primary"></i>30 уроков в месяц</li>
                                                                 </ul>
                                                                 <div className="m-t20">
-                                                                    <Link to={"#"} className="site-button outline outline-2 button-md">Sign Up</Link>
+                                                                    <Link to={'/contacts'} className="site-button outline outline-2 button-md"> Контакты</Link>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -176,18 +135,17 @@ class Expertise extends Component {
                                                             <div className="pricingtable-inner">
                                                                 <div className="pricingtable-price">
                                                                     <div className="pricingtable-icon"><i className="flaticon-users"></i></div>
-                                                                    <h4 className="font-weight-300 m-t10 m-b0">Professional</h4>
-                                                                    <span className="pricingtable-bx text-primary">$50</span> <span className="pricingtable-type">Par Month</span>
+                                                                    <h4 className="font-weight-300 m-t10 m-b0">Индувидуальное обучение</h4>
+                                                                    <span className="pricingtable-bx text-primary">1500с</span> <span className="pricingtable-type">В месяц</span>
                                                                 </div>
                                                                 <ul className="pricingtable-features">
-                                                                    <li><i className="fa fa-check text-primary"></i> Full Responsive </li>
-                                                                    <li><i className="fa fa-check text-primary"></i> Multi color theme</li>
-                                                                    <li><i className="fa fa-check text-primary"></i> With Bootstrap</li>
-                                                                    <li><i className="fa fa-check text-primary"></i> Easy to customize</li>
-                                                                    <li><i className="fa fa-check text-primary"></i> Many Sortcodes</li>
+                                                                    <li><i className="fa fa-check text-primary"></i>Вы получите безценный опыт</li>
+                                                                    <li><i className="fa fa-check text-primary"></i> Вы получите безценный опыт</li>
+                                                                    <li><i className="fa fa-check text-primary"></i>30 уроков в месяц</li>
+                                                                   
                                                                 </ul>
                                                                 <div className="m-t20 m-b5">
-                                                                    <Link to={"#"} className="site-button button-md">Sign Up</Link>
+                                                                    <Link to={'/contacts'} className="site-button button-md">Контакты</Link>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -197,18 +155,16 @@ class Expertise extends Component {
                                                             <div className="pricingtable-inner">
                                                                 <div className="pricingtable-price">
                                                                     <div className="pricingtable-icon"><i className="flaticon-bar-chart"></i></div>
-                                                                    <h4 className="font-weight-300 m-t10 m-b0">Enterprise</h4>
-                                                                    <span className="pricingtable-bx text-primary">$75</span> <span className="pricingtable-type">Par Month</span>
+                                                                    <h4 className="font-weight-300 m-t10 m-b0">Онлайн Обучение</h4>
+                                                                    <span className="pricingtable-bx text-primary">800с</span> <span className="pricingtable-type">В месяц</span>
                                                                 </div>
                                                                 <ul className="pricingtable-features">
-                                                                    <li><i className="fa fa-check text-primary"></i> Full Responsive </li>
-                                                                    <li><i className="fa fa-check text-primary"></i> Multi color theme</li>
-                                                                    <li><i className="fa fa-check text-primary"></i> With Bootstrap</li>
-                                                                    <li><i className="fa fa-check text-primary"></i> Easy to customize</li>
-                                                                    <li><i className="fa fa-check text-primary"></i> Many Sortcodes</li>
+                                                                    <li><i className="fa fa-check text-primary"></i>Вы получите безценный опыт</li>
+                                                                    <li><i className="fa fa-check text-primary"></i> Вы получите безценный опыт</li>
+                                                                    <li><i className="fa fa-check text-primary"></i>30 уроков в месяц</li>
                                                                 </ul>
                                                                 <div className="m-t20">
-                                                                    <Link to={"#"} className="site-button outline outline-2 button-md">Sign Up</Link>
+                                                                    <Link to={'/contacts'} className="site-button outline outline-2 button-md"> Контакты</Link>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -232,8 +188,8 @@ class Expertise extends Component {
                             </div>
                             <div className="container">
                                 <div className="section-head text-center">
-                                    <h2 className="box-title m-tb0">Our Testimonials<span className="bg-primary"></span></h2>
-                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the </p>
+                                    <h2 className="box-title m-tb0">Отзывы от наших учеников<span className="bg-primary"></span></h2>
+                                    <p>Мы открыли путь для каждого ученика и они тоже не жалеет что выбирали нас</p>
                                 </div>
                                 <div className="section-content m-b30 	">
 								 <TestimonialCarousel /> 

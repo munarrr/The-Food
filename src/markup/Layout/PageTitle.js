@@ -9,7 +9,7 @@ const PageTitle = ({ motherMenu, activeMenu }) => {
 
 				<div className="breadcrumb-row">
 					<ul className="list-inline">
-						<li><Link to={"#"}>Home</Link></li>
+						<li><Link to={"/"}>Главная</Link></li>
 						<li className="ml-1">{activeMenu}</li>
 					</ul>
 				</div>

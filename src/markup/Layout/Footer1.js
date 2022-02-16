@@ -22,16 +22,7 @@ class Footer1 extends Component {
                                     </div>
                                 </div>
                                 <div className="col-7 col-lg-2 col-md-6 col-sm-6 footer-col-4">
-                                    <div className="widget widget_services border-0">
-                                        <h5 className="m-b30 text-white">Useful Link</h5>
-                                        <ul>
-                                            <li><Link to={"#"}>Create Account</Link></li>
-                                            <li><Link to={"#"}>Company Philosophy </Link></li>
-                                            <li><Link to={"#"}>Corporate Culture</Link></li>
-                                            <li><Link to={"#"}>Portfolio</Link></li>
-                                            <li><Link to={"#"}>Project Details</Link></li>
-                                        </ul>
-                                    </div>
+                                   
                                 </div>
                                 <div className="col-lg-4 col-md-6 col-sm-6 footer-col-4">
                                     <div className="widget widget_getintuch">
@@ -46,7 +37,7 @@ class Footer1 extends Component {
                                 <div className="col-lg-4 col-md-6 col-sm-6 footer-col-4 ">
                                     <div className="widget">
                                         <h5 className="m-b30 text-white">подпишись на наш сеть</h5>
-                                        <p className="text-capitalize m-b20">If you have any questions, you can contact with us so that we can give you a satisfying answer. Subscribe to our newsletter to get our latest products.</p>
+                                        <p className="text-capitalize m-b20">Кто не знает иностранных языков, ничего не знает и о своём собственном</p>
                                         <div className="subscribe-form m-b20">
                                             <form className="dzSubscribe" action="script/mailchamp.php" method="post">
                                                 <div className="dzSubscribeMsg"></div>

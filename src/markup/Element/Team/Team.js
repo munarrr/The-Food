@@ -9,8 +9,11 @@ import pic3 from '../../../images/our-team/pic3.jpg';
 import pic4 from '../../../images/our-team/pic4.jpg';
 
 const teamBlog = [
-      { images: pic1, }, { images: pic3, },
-      { images: pic2, }, { images: pic4, },
+      { images: pic1, text: "Aigul Kokonovo", prof: "Teacher" },
+      { images: pic3, text: "Aigul Kokonovo", prof: "Teacher" },
+      { images: pic2, text: "Aigul Kokonovo", prof: "Teacher" },
+      { images: pic4, text: "Aigul Kokonovo", prof: "Teacher" },
+      
 ]
 
 class Team extends Component {
@@ -28,8 +31,8 @@ class Team extends Component {
                                     <div className="section-full text-center bg-white content-inner-1">
                                           <div className="container">
                                                 <div className="section-head text-black text-center">
-                                                      <h2>Meet Our Team</h2>
-                                                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>
+                                                      <h2>ПРЕПОДАВАТЕЛИ ИЗ США</h2>
+                                                      <p>Вы сразу погружаетесь в языковую среду и с каждым занятием общаетесь все свободнее. Студенты с начальными уровнями занимаются с русскоязычными преподавателями.</p>
                                                 </div>
                                                 <div className="row">
                                                       {teamBlog.map((data, index) => (
@@ -49,8 +52,8 @@ class Team extends Component {
                                                                               </div>
                                                                         </div>
                                                                         <div className="dlab-title-bx p-a10">
-                                                                              <h5 className="text-black m-a0">John Doe</h5>
-                                                                              <span className="clearfix">Creative Director</span>
+                                                                              <h5 className="text-black m-a0">{data.text}</h5>
+                                                                              <span className="clearfix">{ data.prof}</span>
                                                                         </div>
                                                                   </div>
                                                             </div>

@@ -26,9 +26,9 @@ class Faqs extends Component {
                                     <div className="section-full overlay-white-middle content-inner" style={{ backgroundImage: "url(" + pattern + ")" }}>
                                           <div className="container">
                                                 <div className="section-head text-black text-center">
-                                                      <h3>Do you have Questions?</h3>
+                                                      <h3>У вас остались вопросы?</h3>
                                                       <div className="dlab-separator bg-primary"></div>
-                                                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>
+                                                      <p>Еслли все еще не получили ответ то отправте нам свой телефон номер и участвуйте в розыгрыш</p>
                                                 </div>
                                                 <div className="row">
                                                       <div className="col-lg-6 col-md-12 m-b30" >
